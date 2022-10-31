@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Rents\Quieres\Новая папка\**" />
+    <EmbeddedResource Remove="Rents\Quieres\Новая папка\**" />
+    <None Remove="Rents\Quieres\Новая папка\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="11.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Invoices\Commands\CreateInvoice\" />
+    <Folder Include="Invoices\Commands\DeleteInvoice\" />
+    <Folder Include="Invoices\Commands\UpdateInvoice\" />
+    <Folder Include="Organizations\Commands\CreateOrganization\" />
+    <Folder Include="Organizations\Commands\DeleteOrganization\" />
+    <Folder Include="Organizations\Commands\UpdateOrganization\" />
+    <Folder Include="Rents\Commands\CreateRent\" />
+    <Folder Include="Rents\Commands\DeleteRent\" />
+    <Folder Include="Rents\Commands\UpdateRent\" />
+    <Folder Include="Rooms\Commands\CreateRoom\" />
+    <Folder Include="Rooms\Commands\DeleteRoom\" />
+    <Folder Include="Rooms\Commands\UpdateRoom\" />
+  </ItemGroup>
+
+</Project>
