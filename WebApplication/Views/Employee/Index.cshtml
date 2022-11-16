@@ -1,0 +1,46 @@
+﻿@model Application.Employees.Quieres.GetEmployeeList.EmployeeListVm
+@{
+    ViewData["Title"] = "Employee Page";
+}
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+
+<div class="container">
+    <h1>Таблица Employee</h1>
+    <a href="/">Назад</a>
+    <table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Employee Name</th>
+        <th>Employee Surname</th>
+    </tr>
+    @foreach (var item in Model.employees)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.name</td>
+            <td>@item.surname</td>
+        </tr>
+    }
+</table>
+</div>

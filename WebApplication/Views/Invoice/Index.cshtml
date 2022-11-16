@@ -1,0 +1,56 @@
+﻿@model Application.Invoices.Quieres.GetInvoiceList.InvoiceListVm
+@{
+    ViewData["Title"] = "Invoice Page";
+}
+
+<style>
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 20px;
+        color: black;
+        margin-bottom: 20px;
+    }
+    a:hover {
+        color: red;
+        text-decoration: underline;
+    }
+</style>
+
+
+<div class="container">
+    <h1>Таблица Invoice</h1>
+    <a href="/">Назад</a>
+    <table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Invoice Create date</th>
+        <th>Invoice number</th>
+        <th>Invoice organizationID</th>
+        <th>Invoice roomID</th>
+        <th>Invoice puy sum</th>
+        <th>Invoice pay date</th>
+        <th>Invoice employeeID</th>
+    </tr>
+    @foreach (var item in Model.invoices)
+    {
+        <tr>
+            <td>@item.id</td>
+            <td>@item.createDate</td>
+            <td>@item.number</td>
+            <td>@item.organizationID</td>
+            <td>@item.roomID</td>
+            <td>@item.puySum</td>
+            <td>@item.payDate</td>
+            <td>@item.employeeID</td>
+        </tr>
+    }
+</table>
+</div>
