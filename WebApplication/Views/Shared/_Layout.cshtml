@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/WebApplication.styles.css" asp-append-version="true" />
+    <style>
+        header{
+            background-color: #FDD7FD;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+        li{
+            display: inline-block;
+            font-size: 18px;
+            list-style-type: none;
+            width: 20%;
+        }
+        footer{
+            background-color: #000;
+            width: 99%;
+            height: 50px;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #footer-link{
+            color: #fff;
+            text-decoration: none;
+        }
+        .header-container{
+           width: 100%;
+           margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <div class="header-container">
+                <ul>
+                    <li><a href="/employee">Рабочие</a></li>
+                    <li><a href="/organization">Организации</a></li>
+                    <li><a href="/invoice">Инвойсы</a></li>
+                    <li><a class="header-link" href="/account">Аккаунт</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main-container">
+                @RenderBody()
+            </div>
+        </main>
+        <footer>
+            <a href="https://github.com/Valeriabort-gt/ASP_LABS_Bortnovskaja" id="footer-link">GitHub</a>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

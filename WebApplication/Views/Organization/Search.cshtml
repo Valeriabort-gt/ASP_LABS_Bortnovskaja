@@ -1,0 +1,90 @@
+﻿@model Application.Organizations.Queres.GetOrganizationSearchList.OrganizationListVm
+@{
+    ViewData["Title"] = "OrganizationsSearchPage";
+}
+
+
+<style>
+    .contractors-container {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+   .nav-wrapper {
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   .nav-input {
+       width: 350px;
+       height: 50px;
+       border: 1px solid grey;
+       color: grey;
+       border-radius: 7px;
+       padding-left: 30px;
+   }
+
+   .nav-button {
+       width: 150px;
+       height: 50px;
+       background-color: transparent;
+       border: 1px solid grey;
+       color: grey;
+       cursor: pointer;
+       border-radius: 7px;
+       transition: 0.3s;
+   }
+
+   .nav-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+</style>
+
+<div class="contractors-container">
+
+    <nav class="nav-wrapper">
+        <form class="nav-container" action="/organization/Search">
+            <input placeholder="Поиск" class="nav-input" name="searchString" type="text" value=@Context.Request.Cookies["lastSearch"] />
+            <button class="nav-button" type="submit">Найти</button>
+            
+        </form>
+    </nav>
+
+    <table class="table contractors-table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.organizations)
+            {
+                <tr>
+                    <th scope="row">@item.id</th>
+                    <td>@item.name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href=@Model.back aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href=@Model.next aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>

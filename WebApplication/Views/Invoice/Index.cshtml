@@ -1,0 +1,147 @@
+﻿@model Application.Invoices.Quieres.GetInvoiceList.InvoiceListVm
+@{
+    ViewData["Title"] = "InvoicesPage";
+}
+
+<style>
+    .contractors-container {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+   .nav-wrapper {
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   .nav-input {
+       width: 100px;
+       height: 35px;
+       border: 1px solid grey;
+       color: grey;
+       border-radius: 7px;
+       padding-left: 30px;
+   }
+
+   .nav-button {
+       width: 100px;
+       height: 39px;
+       border-radius: 5px;
+       background-color: #F7EF79;
+       cursor: pointer;
+       transition: 0.3s;
+       border: none;
+   }
+
+   .contractors-helpbody {
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 70px;
+   }
+
+   .contractors-add-button {
+       width: 150px;
+       height: 39px;
+       border-radius: 5px;
+       background-color: #F7EF79;
+       cursor: pointer;
+       transition: 0.3s;
+       border: none;
+   }
+
+   .contractors-add-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+
+   .nav-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+   button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #F7EF79;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+    table, tr, th, td{
+        border: 1px solid #8080805c;
+        margin-left: 160px;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="contractors-container">
+
+        <table class="table contractors-table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Create Date</th>
+                    <th scope="col">Number</th>
+                    <th scope="col">Organization Name</th>
+                    <th scope="col">Num of Room</th>
+                    <th scope="col">Puy Sum</th>
+                    <th scope="col">Pay Date</th>
+                    <th scope="col">Employee Name</th>
+                    <th scope="col">Employee Surname</th>
+                    <td scope="col"><b>Изменение</b></td>
+                    <td scope="col"><b>Удаление</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.invoices)
+                {
+                     <tr>
+                        <th scope="row">@item.id</th>
+                        <td>@item.createDate.ToShortDateString()</td>
+                        <td>@item.number</td>
+                        <td>@item.organization.name</td>
+                        <td>@item.room.numOfRoom</td>
+                        <td>@item.puySum</td>
+                        <td>@item.payDate.ToShortDateString()</td>
+                        <td>@item.employee.name</td>
+                        <td>@item.employee.surname</td>
+                        <td><a href="/invoice/detail?id=@item.id">Изменить</a></td>
+                        <td><a href="/invoice/delete?id=@item.id">Удалить</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    
+
+    <div class="contractors-helpbody">
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href=@Model.back aria-label="Previous">
+                    <span aria-hidden="true">&#8592;</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href=@Model.next aria-label="Next">
+                    <span aria-hidden="true">&#8594;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="/invoice">
+        <input type="number" class="nav-input" name="page" max="@Model.pagesCount" min="0"/>
+        <button type="submit" class="nav-button">Перейти</button>
+    </form>
+
+    <form action="/invoice/create">
+        <button type="submit" class="contractors-add-button">Добавить</button>
+    </form>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "CreateUserPage";
+}
+
+<style>
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        flex-direction: column;
+    }
+    input {
+        border: 1px solid black;
+    }
+</style>
+
+<div class="container">
+    <h1>Страница добавления ContractorMaterials</h1>
+
+<form method="post" action="/users/Create">
+  <label>Login:
+    <input name="Login" />
+  </label>
+  <label>Password:
+    <input name="Password" type="password" />
+  </label>
+  <button type="submit">Save</button>
+</form>
+
+</div>

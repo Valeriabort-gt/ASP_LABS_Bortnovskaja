@@ -1,0 +1,45 @@
+﻿@model Domain.User
+@{
+}
+
+<style>
+    .auth-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        flex-direction: column;
+    }
+    .auth-link {
+        position:relative;
+        width: 190px;
+        height: 50px;
+        background-color: #F7EF79; 
+        cursor: pointer;
+        text-align: center;
+        border-radius: 15px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div class="auth-container">
+     @if (Model == null)
+    {
+    <h1>Вы не авторизованы. Войдите в аккаунт</h1>
+    <a class="auth-link" href="/authenfication/signIn">Войти</a>
+    <a class="auth-link" href="/authenfication/signUp">Зарегистрироваться</a>
+    }
+    else
+    {
+        <h1>Здравствуйте, @Model.Login</h1>
+        <h2>Ваша роль: @Model.Role.Role</h2>
+        @if(@Model.Role.Role == "Admin")
+        {
+            <h2>Вам доступно управление пользователями: <a href="/users">Users</a></h2>
+        }
+        <a class="auth-link" href="/authenfication/logout">Выйти</a>
+    }
+</div>

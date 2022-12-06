@@ -1,0 +1,39 @@
+﻿@model Application.Organizations.Queres.GetOrganizationDetails.OrganizationDetailsVm
+@{
+    ViewData["Title"] = "OrganizationPages";
+}
+
+<style>
+    form {
+        width: 95%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 15px;
+    }
+    input {
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+    button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #F7EF79;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+</style>
+
+<form action="/organization/Update" method="post">
+    <h1>Страница изменения организации</h1>
+    <label>Id:<input readonly name="id" value=@Model.id /></label>
+    <label>Name: <input type="text" name="name" value=@Model.name /></label>
+    <label>Email: <input type="text" name="email" value=@Model.email /></label>
+    <button type="submit">Сохранить</button>
+</form>

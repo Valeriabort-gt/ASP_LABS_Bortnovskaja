@@ -1,0 +1,127 @@
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Persistence.deps.json
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Persistence.dll
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Persistence.pdb
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Application.dll
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Domain.dll
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Application.pdb
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\bin\Debug\net6.0\Domain.pdb
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.dll
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\Persistence.pdb
+D:\Универ\C#\Lab3\ConsoleApp\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Persistence.deps.json
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Application.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Domain.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Application.pdb
+D:\Универ\РПИБД\lab3\Solution1\Persistence\bin\Debug\net6.0\Domain.pdb
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab3\Solution1\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Persistence.deps.json
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Application.dll
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Domain.dll
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Application.pdb
+D:\Универ\РПИБД\lab4\Persistence\bin\Debug\net6.0\Domain.pdb
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab4\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Persistence.deps.json
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Application.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Domain.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Application.pdb
+D:\Универ\РПИБД\lab_5\lab5\Persistence\bin\Debug\net6.0\Domain.pdb
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
+D:\Универ\РПИБД\lab_5\lab5\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Persistence.deps.json
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Application.dll
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Domain.dll
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Application.pdb
+D:\Универ\РПИБД\lab5.2\Persistence\bin\Debug\net6.0\Domain.pdb
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.dll
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.pdb
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
+D:\Универ\РПИБД\lab5.2\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+G:\лера\Persistence\bin\Debug\net6.0\Persistence.deps.json
+G:\лера\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+G:\лера\Persistence\bin\Debug\net6.0\Persistence.dll
+G:\лера\Persistence\bin\Debug\net6.0\Persistence.pdb
+G:\лера\Persistence\bin\Debug\net6.0\Application.dll
+G:\лера\Persistence\bin\Debug\net6.0\Domain.dll
+G:\лера\Persistence\bin\Debug\net6.0\Application.pdb
+G:\лера\Persistence\bin\Debug\net6.0\Domain.pdb
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.dll
+G:\лера\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.pdb
+G:\лера\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
+G:\лера\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Persistence.deps.json
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Persistence.runtimeconfig.json
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Persistence.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Persistence.pdb
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Application.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Domain.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Application.pdb
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\bin\Debug\net6.0\Domain.pdb
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.AssemblyInfo.cs
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.csproj.CopyComplete
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\refint\Persistence.dll
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.pdb
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\Persistence.genruntimeconfig.cache
+C:\Users\lbort\Downloads\Telegram Desktop\лера (2)\Persistence\obj\Debug\net6.0\ref\Persistence.dll

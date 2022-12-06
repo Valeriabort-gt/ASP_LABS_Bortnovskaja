@@ -1,0 +1,135 @@
+﻿@model Application.Employees.Quieres.GetEmployeeList.EmployeeListVm
+@{
+    ViewData["Title"] = "EmployeesPage";
+}
+
+<style>
+    .contractors-container {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+   .nav-wrapper {
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   .nav-input {
+       width: 100px;
+       height: 35px;
+       border: 1px solid grey;
+       color: grey;
+       border-radius: 7px;
+       padding-left: 30px;
+   }
+
+   .nav-button {
+       width: 100px;
+       height: 39px;
+       border-radius: 5px;
+       background-color: #F7EF79;
+       cursor: pointer;
+       transition: 0.3s;
+       border: none;
+   }
+
+   .contractors-helpbody {
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 70px;
+   }
+
+   .contractors-add-button {
+       width: 150px;
+       height: 39px;
+       border-radius: 5px;
+       background-color: #F7EF79;
+       cursor: pointer;
+       transition: 0.3s;
+       border: none;
+   }
+
+   .contractors-add-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+
+   .nav-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+   button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #F7EF79;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+    table, tr, th, td{
+        border: 1px solid #8080805c;
+        margin-left: 480px;
+        margin-top: 30px;
+    }
+</style>
+
+<div class="contractors-container">
+
+        <table class="table contractors-table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Surname</th>
+                    <td scope="col"><b>Изменение</b></td>
+                    <td scope="col"><b>Удаление</b></td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.employees)
+                {
+                     <tr>
+                        <th scope="row">@item.id</th>
+                        <td>@item.name</td>
+                        <td>@item.surname</td>
+                        <td><a href="/employee/detail?id=@item.id">Изменить</a></td>
+                        <td><a href="/employee/delete?id=@item.id">Удалить</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    
+
+    <div class="contractors-helpbody">
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href=@Model.back aria-label="Previous">
+                    <span aria-hidden="true">&#8592;&nbsp;</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href=@Model.next aria-label="Next">
+                    <span aria-hidden="true">&#8594;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="/employee">
+        <input type="number" class="nav-input" name="page" max="@Model.pagesCount" min="0"/>
+        <button type="submit" class="nav-button">Перейти</button>
+    </form>
+
+    <form action="/employee/create">
+        <button type="submit" class="contractors-add-button">Добавить</button>
+    </form>
+    </div>
+</div>

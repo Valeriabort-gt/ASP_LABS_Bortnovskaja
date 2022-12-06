@@ -1,0 +1,122 @@
+﻿@model Application.Users.Quieres.GetUsersList.UserListVm
+@{
+    ViewData["Title"] = "UsersPage";
+}
+
+<style>
+    .contractors-container {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+   .nav-wrapper {
+       width: 100%;
+       height: 100px;
+       display: flex;
+       justify-content: flex-end;
+       align-items: center;
+   }
+
+   .nav-input {
+       width: 350px;
+       height: 50px;
+       border: 1px solid grey;
+       color: grey;
+       border-radius: 7px;
+       padding-left: 30px;
+   }
+
+   .nav-button {
+       width: 150px;
+       height: 50px;
+       background-color: transparent;
+       border: 1px solid grey;
+       color: grey;
+       cursor: pointer;
+       border-radius: 7px;
+       transition: 0.3s;
+   }
+
+   .contractors-helpbody {
+       display: flex;
+       width: 100%;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .contractors-add-button {
+       width: 150px;
+       height: 30px;
+       background-color: transparent;
+       border: 1px solid grey;
+       color: grey;
+       cursor: pointer;
+       border-radius: 7px;
+       transition: 0.3s;
+   }
+
+   .contractors-add-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+
+   .nav-button:hover {
+       background-color: lightgreen;
+       border: 1px solid lightgreen;
+   }
+</style>
+
+<div class="contractors-container">
+
+        <table class="table contractors-table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Login</th>
+                    <th scope="col">Role</th>
+                    <td scope="col">Change</td>
+                    <td scope="col">Delete</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.users)
+                {
+                     <tr>
+                        <th scope="row">@item.Id</th>
+                        <td>@item.Login</td>
+                        <td>@item.Role.Role</td>
+                        <td><a href="/users/detail?id=@item.Id">Изменить</a></td>
+                        <td><a href="/users/delete?id=@item.Id">Удалить</a></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    
+
+    <div class="contractors-helpbody">
+        <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link" href=@Model.back aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" href=@Model.next aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="/users">
+        <input type="number" class="nav-input" name="page" max="@Model.pagesCount" min="0"/>
+        <button type="submit" class="nav-button">Перейти</button>
+    </form>
+
+    <form action="/users/create">
+        <button type="submit" class="contractors-add-button">Добавить</button>
+    </form>
+    </div>
+</div>

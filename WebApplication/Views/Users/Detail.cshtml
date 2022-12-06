@@ -1,0 +1,55 @@
+﻿@model Application.Users.Quieres.GetUsersDetail.UserDetailsVm
+@{
+    ViewData["Title"] = "UserDetailPage";
+}
+
+<style>
+    form {
+        width: 40%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 30px;
+    }
+    input {
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+    button {
+        width: 150px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid grey;
+        cursor: pointer;
+        color: grey;
+        transition: 0.3s;
+    }
+    button:hover {
+        background-color: lightgreen;
+    }
+</style>
+
+<form action="/users/Update" method="post">
+    <label>Id:<input readonly name="Id" value=@Model.Id /></label>
+    <label>Login: <input type="text" name="Login" value=@Model.Login /></label>
+    <label>Login: <input type="password" name="Password" value=@Model.Password /></label>
+     <label>Role: 
+       <select name="RoleId">
+            @if(Model.Role.Id == 1)
+            {
+                <option value="1" selected>User</option>
+                <option value="2">Admin</option>
+            }
+            else
+            {
+                <option value="1">User</option>
+                <option value="2" selected>Admin</option>
+            }
+       </select>
+    </label>
+    <button type="submit">Сохранить</button>
+</form>

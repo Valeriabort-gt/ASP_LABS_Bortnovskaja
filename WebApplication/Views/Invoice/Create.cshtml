@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "CreateInvoicePage";
+}
+
+<style>
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    form {
+        width: 95%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 15px;
+    }
+    button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #F7EF79;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+
+</style>
+
+<div class="container">
+    <h1>Страница добавления инвойсов</h1>
+
+<form method="post" action="/invoice/Create">
+  <label>CreateDate: 
+      <input name="createdDate" type="date"/>
+  </label>
+  <label>PuySum: 
+      <input name="puySum" />
+  </label>
+  <label>Number:
+      <input name="number" />
+  </label>
+  <label>PayDate: 
+      <input name="payDate" type="date"/>
+  </label>
+  <label>
+      Organization:
+      <select name="organization">
+          @foreach (var item in Model.organizations)
+          {
+              <option value=@item.id>@item.id || @item.name || @item.email</option>
+          }
+      </select>
+  </label>
+  <label>
+      Room:
+      <select name="room">
+          @foreach (var item in Model.rooms)
+          {
+            <option value=@item.id>@item.id || @item.numOfRoom || @item.description || @item.square || @item.building.id</option>
+          } 
+      </select>
+  </label>
+  <label>
+      Employee:
+      <select name="employee">
+          @foreach (var item in Model.employees)
+          {
+              <option value=@item.id>@item.id || @item.name || @item.surname</option>
+          }
+      </select>
+  </label>
+  <button type="submit">Сохранить</button>
+</form>
+
+</div>

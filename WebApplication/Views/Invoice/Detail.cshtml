@@ -1,0 +1,86 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "InvoicePages";
+}
+
+<style>
+    form {
+        width: 95%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 15px;
+    }
+    input {
+        width: 200px;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 7px;
+    }
+    button {
+        width: 250px;
+        height: 50px;
+        border-radius: 15px;
+        background-color: #F7EF79;
+        cursor: pointer;
+        transition: 0.3s;
+        border: none;
+    }
+</style>
+
+<form action="/invoice/Update" method="post">
+    <h1>Страница изменения инвойса</h1>
+    <label>Id: <input readonly name="id" value=@Model.detail.id /></label>
+    <label>Create Date: <input type="datetime" name="name" value=@Model.detail.createDate.ToString("yyyy-MM-dd")  /></label>
+    <label>Number: <input type="text" name="number" value=@Model.detail.number /></label>
+    <label>Room: 
+       <select name="room">
+           @foreach (var item in Model.rooms)
+           {
+               @if (@item.id == Model.detail.room.id)
+               {
+                    <option value=@item.id selected>@item.id || @item.numOfRoom || @item.description || @item.square || @item.building.id</option>
+                }
+                else
+                {
+                    <option value=@item.id>@item.id || || @item.numOfRoom || @item.description || @item.square || @item.building.id</option>
+                }
+            }
+       </select>
+    </label>
+    <label>Organization: 
+       <select name="organization">
+           @foreach (var item in Model.organizations)
+           {
+               @if (@item.id == Model.detail.organization.id)
+               {
+                    <option value=@item.id selected>@item.id || @item.name || @item.email</option>
+                }
+                else
+                {
+                    <option value=@item.id>@item.id || @item.name || @item.email</option>
+                }
+            }
+       </select>
+    </label>
+    <label>Puy Sum: <input type="text" name="puySum" value=@Model.detail.puySum /></label>
+    <label>Pay Date: <input type="datetime" name="number" value=@Model.detail.payDate.ToString("yyyy-MM-dd")  /></label>
+    <label>Employee: 
+       <select name="employee">
+           @foreach (var item in Model.employees)
+           {
+               @if (@item.id == Model.detail.employee.id)
+               {
+                    <option value=@item.id selected>@item.id || @item.name || @item.surname</option>
+                }
+                else
+                {
+                    <option value=@item.id>@item.id || @item.name || @item.surname</option>
+                }
+            }
+       </select>
+    </label>
+    <button type="submit">Сохранить</button>
+</form>
