@@ -26,14 +26,14 @@ namespace WebApplication.Controllers
 
 
         /// <summary>
-        /// Get the list of ContractorMaterials
+        /// Get the list of Invoices
         /// </summary>
         /// <remarks>
         /// Sample request:
-        /// GET /contractorMaterial
+        /// GET /invoice
         /// </remarks>
         /// <param name="page">Number of page</param>
-        /// <returns>Return ConctractorMaterialVm</returns>
+        /// <returns>Return InvoiceVm</returns>
         /// <response code="200">Success</response>
         /// <response code="401">Unauthorized</response>
         [HttpGet("[action]/")]
@@ -47,14 +47,14 @@ namespace WebApplication.Controllers
         }
 
         /// <summary>
-        /// Gets the contractor material by Id
+        /// Gets the invoice by Id
         /// </summary>
         /// <remarks>
         /// Sample request:
-        /// GET /contractorMaterial/0
+        /// GET /invoice/0
         /// </remarks>
-        /// <param name="id">Contractor Material Id</param>
-        /// <returns>Return ContractorMaterialDetailsVm</returns>
+        /// <param name="id">Invoice Id</param>
+        /// <returns>Return InvoiceDetailsVm</returns>
         /// <response code="200">Success</response>
         /// <response code="401">Unauthorized</response>
         /// <response code="400">Bad request</response>
@@ -80,17 +80,17 @@ namespace WebApplication.Controllers
         }
 
         /// <summary>
-        /// Create Contractor Material
+        /// Create Invoice
         /// </summary>
         /// <remarks>
         /// Sample request:
-        /// POST /contractorMaterial
+        /// POST /invoice
         /// {
         ///     name: "Test"
         /// }
         /// </remarks>
-        /// <param name="createInvoice">CreateContractorMaterialDto object</param>
-        /// <returns>Return Contractor Material</returns>
+        /// <param name="createInvoice">CreateInvoiceDto object</param>
+        /// <returns>Return Invoice</returns>
         /// <response code="200">Success</response>
         /// <response code="401">Unauthorized</response>
         [HttpPost]
@@ -109,17 +109,17 @@ namespace WebApplication.Controllers
         }
 
         /// <summary>
-        /// Update Contractor
+        /// Update Invoice
         /// </summary>
         /// <remarks>
         /// Sample request:
-        /// PUT /contractor
+        /// PUT /invoice
         /// {
         ///     id: 0,
         ///     name: "Test2"
         /// }
         /// </remarks>
-        /// <param name="updateInvoice">UpdateContractorDto object</param>
+        /// <param name="updateInvoice">UpdateInvoiceDto object</param>
         /// <returns>Return NoContent</returns>
         /// <response code="200">Success</response>
         /// <response code="401">Unauthorized</response>
@@ -140,13 +140,13 @@ namespace WebApplication.Controllers
         }
 
         /// <summary>
-        /// Delete Contractor
+        /// Delete Invoice
         /// </summary>
         /// <remarks>
         /// Sample request:
-        /// DELETE /contractor/0
+        /// DELETE /invoice/0
         /// </remarks>
-        /// <param name="id">Contractor Id</param>
+        /// <param name="id">Invoice Id</param>
         /// <returns>Return NoContent</returns>
         /// <response code="200">Success</response>
         /// <response code="401">Unauthorized</response>
